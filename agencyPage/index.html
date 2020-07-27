@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+  <title>Agency Page</title>
+  <link rel="stylesheet" href="./main.css">
+  <link rel="stylesheet" href="./css/font-awesome-4.7.0/css/font-awesome.min.css">
+  <link href="css/video-js.css" rel="stylesheet" />
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=0d558971-c4bd-4676-8ded-9031a8335d64&lang=ru_RU" type="text/javascript"></script>
+  <script src="https://vjs.zencdn.net/ie8/1.1.2/videojs-ie8.min.js"></script>
+</head>
+<body>
+  <div class="begining" id="home_target">
+    <nav>
+      <div class="float" id="home" data-float>HOME</div>
+      <div class="float" id="portfolio" data-float>PORTFOLIO</div>
+      <div class="float" id="about_us" data-float>ABOUT US</div>
+      <div class="float" id="dislocation" data-float>DISLOCATION</div>
+      <div class="float" id="contact" data-float>CONTACT</div>
+      <div class="float-mobile fa-home" id="home_mobile" data-float>
+        <div class="desc">HOME</div>
+      </div>
+      <div class="float-mobile fa-folder" id="portfolio_mobile" data-float>
+        <div class="desc">PORTFOLIO</div>
+      </div>
+      <div class="float-mobile fa-th-list" id="about_us_mobile" data-float>
+        <div class="desc">ABOUT US</div>
+      </div>
+      <div class="float-mobile fa-map-marker" id="dislocation_mobile" data-float>
+        <div class="desc">DISLOCATION</div>
+      </div>
+      <div class="float-mobile fa-phone" id="contact_mobile" data-float>
+        <div class="desc">CONTACT</div>
+      </div>
+    </nav>
+    <div class='hat'>
+      <div class="text">
+        <div class="header">OUR STORING ORGANAISATION</div>
+        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing 
+          elit. Amet molestiae vitae id modi sunt non labore incidunt ipsum! Praesentium sit autem debitis enim, culpa inventore nobis molestiae doloribus accusamus omnis!</div>
+        <div class="button">Contact Us</div>
+      </div>
+      <div class="video">
+        <!-- <img src="./img/video.jpg" alt="Video"> -->
+        <video-js id="videojs" class="video-js vjs-big-play-centered" preload="auto" poster="img/vbg.png" data-setup='{"controls":true, "fluid":true, "playbackRates":[0.5, 1, 1.5, 2]}'>
+          <source src="mp4/plug.mp4" type="video/mp4">
+        </video-js>
+      </div>
+    </div>
+  </div>
+  <main>
+    <div class="agreement">
+      <div class="text">
+        <div class="header">DO YOU KNOW WE CAN PROVIDE FOR YOU?</div>
+        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, soluta id nisi molestiae quia sequi ullam explicabo hic quo 
+          dicta ducimus numquam maxime pariatur fuga corporis placeat blanditiis enim necessitatibus?</div>
+        <div class="button">Learn More</div>
+      </div>
+      <div class="advantages">
+        <div>
+          <div class="incon"><img src="svg/settings.svg" alt=""></div>
+          <div class="header">Management</div>
+          <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id porro, vero repellat commodi officia debitis provident  
+          numquam praesentium, ab fuga excepturi voluptatum nobis expedita doloribus atque sapiente dolor, ex quas?</div>
+        </div>
+        <div>
+          <div class="incon"><img src="svg/pencil.svg" alt=""></div>
+          <div class="header">UI/UX Design</div>
+          <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             In magnam ipsa dolorum nesciunt quia distinctio laborum autem optio odio minus? Earum esse aliquid harum temporibus quaerat enim voluptates sequi doloremque.</div>
+        </div>
+        <div>
+          <div class="incon"><img src="svg/diamond.svg" alt=""></div>
+          <div class="header">Logo / Branding</div>
+          <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             In magnam ipsa dolorum nesciunt quia distinctio laborum autem optio odio minus? Earum esse aliquid harum temporibus quaerat enim voluptates sequi doloremque.</div>
+        </div>
+        <div>
+          <div class="incon"><img src="svg/trank.svg" alt=""></div>
+          <div class="header">Animation</div>
+          <div class="desc">Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+             In magnam ipsa dolorum nesciunt quia distinctio laborum autem optio odio minus? Earum esse aliquid harum temporibus quaerat enim voluptates sequi doloremque.</div>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="products" id="portfolio_target">
+      <div class="header">FEATURE PRODUCTS</div>
+      <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Cupiditate nostrum dolorum fugiat ipsam.</div>
+      <div class="line"></div>
+      <div class="selector">
+        <div>ALL</div>
+        <div>PRINT TEMPLATE</div>
+        <div>WEB TEMPLATE</div>
+        <div>USER INTERACTIVE</div>
+        <div>MOCK-UP</div>
+      </div>
+      <div class="exx">
+        <div><img src="img/block.png" alt=""></div>
+        <div><img src="img/block.png" alt=""></div>
+        <div><img src="img/block.png" alt=""></div>
+        <div><img src="img/block.png" alt=""></div>
+        <div><img src="img/block.png" alt=""></div>
+        <div><img src="img/block.png" alt=""></div>
+        <div><img src="img/block.png" alt=""></div>
+        <div><img src="img/block.png" alt=""></div>
+      </div>
+    </div>
+    <div class="team" id="about_target">
+      <div class="header">MEET OUR TEAM</div>
+      <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi eos facilis illo maiores quisquam, perferendis cum blanditiis</div>
+      <div class="line"></div>
+      <div class="teamimg">
+        <div class="lphoto"><img src="img/rectangle.png" alt=""></div>
+        <div class="text">
+          <div class="header">MARK WAUGH</div>
+          <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum error exercitationem mollitia amet, asperiores odio quaerat excepturi.</div>
+          <div class="refs">
+            <div class="text">Facebook</div>
+            <div class="text">Dribble</div>
+            <div class="text">Behance</div>
+            <div class="text">Twiter</div>
+            <div class="ico fa fa-facebook"></div>
+            <div class="ico fa fa-dribbble"></div>
+            <div class="ico fa fa-behance"></div>
+            <div class="ico fa fa-twitter"></div>
+          </div>
+        </div>
+        <div class="members">
+          <div><img src="img/block.png" alt=""></div>
+          <div><img src="img/block.png" alt=""></div>
+          <div><img src="img/block.png" alt=""></div>
+          <div><img src="img/block.png" alt=""></div>
+        </div>
+      </div>
+    </div>
+    <div class="line"></div>
+    <div class="disloc" id="dislocation_target">
+      <div id="map" class="yamap"></div>
+      <div class="text">
+        <div class="header">OUR DISLOCATION</div>
+        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi atque at
+           nulla culpa cum ducimus quam quo nesciunt praesentium corrupti et mollitia sapiente, molestiae delectus. Incidunt tenetur similique quo quia.</div>
+      </div>
+    </div>
+    <div class="line"></div>
+  </main>
+  <footer>
+    <div class="news">
+      <div class="header">Design tips, tricks and freebies. Delivered weekly.</div>
+      <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+      <div class="addr">
+        <input type="text" class="email" id="email2sub" placeholder="Email Adderss...">
+        <div class="button">SUBSCRIBE</div>
+      </div>
+    </div>
+    <div class="contact" id="contact_target">
+      <div class="text">
+        <div class="header">GET IN TOUCH</div>
+        <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aperiam alias ipsam, soluta praesentium
+           voluptatem vel sit neque ut porro ab, libero rerum eius repellat laudantium rem! Earum, quisquam modi?</div>
+        <div class="line"></div>
+        <div class="block">
+          <form action="#" class="send">
+            <div>
+              <input type="text" class="input" id="name" placeholder="Name">
+              <input type="text" class="input" id="email" placeholder="Your Mail">
+            </div>
+            <textarea type="text" class="input" id="message" placeholder="Type your massage"></textarea>
+            <button type="submit" class="button">SEND MESSAGE</button>
+          </form>
+          <div class="info">
+            <div>
+              <div class="header">CONTACT INFO</div>
+              <div class="desc">Jalalabad 24 / A, Ambaarkhana, Sylhet, Bargladesh</div>
+              <div class="email">readwan@deviserweb.com</div>
+              <div class="phone">+(88) 017 617 46373</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="end">
+      <div>
+        <div class="copyrights">© Copyright @Junaed 2016, All rights reserved.</div>
+        <div class="links">
+          <div class="fa fa-twitter"></div>
+          <div class="fa fa-linkedin"></div>
+          <div class="fa fa-google-plus"></div>
+          <div class="fa fa-facebook"></div>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <div id="arrow" class="fa fa-sort-asc"></div>
+  <!-- VideoJS script --->
+  <script src="https://vjs.zencdn.net/7.8.3/video.js"></script>
+
+  <script src="js/mymap.js" type="text/javascript"></script>
+  <script src="main.js" type="text/javascript"></script>
+</body>
+</html>

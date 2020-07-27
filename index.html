@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects</title>
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      font-family: "OpenSans";
+      font-weight: normal;
+      font-style: normal;
+    }
+
+    body {
+      background: url('img/back4.png'), 0 0 repeat;
+    }
+
+    header {
+      background-color: #616060;
+      width: 100%;
+      height: auto;
+      display: block;
+      padding: 1rem 0 1rem 0;
+    }
+    header>span {
+      color: #ece8e8;
+      font-size: 3rem;
+      font-weight: bold;
+      text-align: center;
+      margin: 0 auto 0 auto;
+      display: block;
+      cursor: pointer;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      border-radius: 10px;
+      width: 30%;
+      -webkit-box-shadow: 10px 10px 10px -10px #444444, -10px -10px 10px -10px #444444, 10px -10px 10px -10px #444444, -10px 10px 10px -10px #444444;
+              box-shadow: 10px 10px 10px -10px #444444, -10px -10px 10px -10px #444444, 10px -10px 10px -10px #444444, -10px 10px 10px -10px #444444;
+      user-select: none;
+      -webkit-user-select: none;
+      -ms-user-select: none;
+      -moz-user-select: none;
+    }
+    header>span:active {
+      -webkit-box-shadow: 0 0 0 0 #444444;
+              box-shadow: 0 0 0 0 #444444;
+    }
+
+    main {
+      width: 80%;
+      margin: 1rem auto 0 auto;
+      background-color: #fafafa;
+    }
+    main>div{
+      margin: 0 0 1rem 0;
+    }
+
+    main .link {
+      text-decoration: none;
+      border: none;
+    }
+    main .link:active {
+      border: none;
+    }
+    main .link::before {
+      content: 'CLICK';
+      font-weight: bold;
+      height: 0rem;
+      width: 100%;
+      display: block;
+      position: relative;
+      background-color: #616060;
+      -webkit-transition: all 0.2s;
+      -o-transition: all 0.2s;
+      transition: all 0.2s;
+      overflow: hidden;
+      border-radius: 5px;
+      text-align: center;
+    }
+    main .link:hover::before {
+      height: 3rem;
+    }
+    main .link:active::before {
+      color: #616060;
+    }
+    main .link:focus {
+      border: none;
+    }
+
+    main .name {
+      width: auto;
+      font-size: 2rem;
+      display: inline-block;
+      height: 3rem;
+      overflow-y: hidden;
+    }
+
+    main .desc {
+      display: block;
+      margin: 0.3rem 0 0 2rem;
+      width: 80%;
+      color: #3b3b3b;
+      font-size: 1.5rem ;
+    }
+
+    @font-face {
+      font-family: "OpenSans";
+      font-style: normal;
+      font-weight: bold;
+      src: url('./agencyPage/fonts/OpenSans/OpenSans-Bold.ttf');
+    }
+
+    @font-face {
+      font-family: "OpenSans";
+      font-weight: normal;
+      font-style: normal;
+      src: url('./agencyPage/fonts/OpenSans/OpenSans-Regular.ttf');
+    }
+
+    @font-face {
+      font-family: 'OpenSans';
+      font-weight: normal;
+      font-style: italic;
+      src: url('./agencyPage/fonts/OpenSans/OpenSans-Italic.ttf');
+    }
+
+    @media screen and (max-width: 650px) {
+      header>span {
+        font-size: 2rem;
+        width: 50%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span>CHECK THIS OUT</span>
+  </header>
+  <main>
+    <div>
+      <div class="name"><a style="color: #ff2d2d;" class="link" href="agencyPage/">Agency Page</a></div>
+      <span class="desc">Проект включает в себя как обычные технологии: JavaScpipt, CSS, HTML, так и использование API Yandex Карт и видео плеер на VideoJS library.</span>
+    </div>
+    <div>
+      <span class="name"><a style="color: #efba63;" class="link" href="awesomeSite/">Awesome Site</a></span>
+      <span class="desc">Простой сайт одностраничник на JavaScript, HTML и CSS.</span>
+    </div>
+  </main>
+</body>
+</html>
