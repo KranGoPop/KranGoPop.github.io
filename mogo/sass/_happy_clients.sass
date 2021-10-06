@@ -1,0 +1,62 @@
+@use 'all'
+
+#happy_clients
+  @extend %content
+  background: #00000000
+  padding-bottom: 4rem
+
+  .clients
+    @extend %element
+    margin-top: 6rem
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+
+  .client
+    width: 45%
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    margin-bottom: 3rem
+    position: relative
+
+    @media screen and ( max-width: 600px )
+      width: 100%
+      margin-bottom: 4rem
+
+  .c-info
+    margin-left: 2rem
+    width: 70%
+
+  .c-info>*
+    margin-bottom: 0.8rem
+
+  .c-info>*:nth-last-child(1)
+    margin-bottom: 0
+
+  .c-photo
+    width: 25%
+  
+  .c-name
+    font-family: 'Montserrat'
+    font-weight: 500
+    text-transform: uppercase
+    color: #000
+
+  .c-proffecion
+    color: #585858
+    font-family: 'Roboto'
+    font-style: italic
+    font-weight: 300
+
+  .c-line
+    width: 5rem
+    background-color: all.$def-line-color
+    height: all.$line-height
+    margin-bottom: 1.5rem
+  
+  .c-review
+    color: all.$def-gray
+    font-family: 'Roboto'
+    font-weight: 500

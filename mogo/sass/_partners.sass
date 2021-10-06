@@ -1,0 +1,29 @@
+@use 'all'
+
+#partners
+  padding-top: 3rem
+  padding-bottom: 3rem
+  background: #f8f8f8
+
+  .p-wrapper
+    @extend %element
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+    align-items: center
+
+    @media screen and ( max-width: 600px )
+      flex-wrap: wrap
+
+    .partner
+      width: 10%
+      position: relative
+
+      @media screen and ( max-width: 600px )
+        width: 30%
+        margin-bottom: 3rem
+
+        @for $i from 1 through 3
+          &:nth-last-child(#{$i})
+            margin-bottom: 0
+            

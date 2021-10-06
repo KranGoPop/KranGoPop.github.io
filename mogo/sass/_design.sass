@@ -1,0 +1,58 @@
+@use 'all'
+@use 'sass:list' as *
+
+$ipad-height: 28.4rem * 1.5
+$ipad-aspect-ratio: 477/582
+$ipad-width: $ipad-height * $ipad-aspect-ratio
+$iphone-height: $ipad-height * 0.9
+$iphone-aspect-ratio: 275/477
+$iphone-width: $iphone-height*$iphone-aspect-ratio
+$size-change: (1000px, 0.9), (800px, 0.7), (650px, 0.5), (500px, 0.4), (400px, 0.38)
+
+#design
+  // @extend %content
+  background: #00000000
+  padding-bottom: 0
+  padding-top: 6rem
+  position: relative
+  width: 100%
+
+  .line
+    margin-bottom: 2rem
+
+  &>.iphone, &>.ipad
+
+    &>img
+      display: block
+      height: 100%
+
+  &>.iphone
+    position: absolute
+    height: $iphone-height
+    width: $iphone-width
+    left: calc(50% + #{$ipad-width/2} - #{$iphone-width/2})
+    bottom: -1 * $iphone-height*0.2
+    z-index: all.$z-contindex + 10
+
+    @each $params in $size-change
+      @media screen and ( max-width: #{nth($params, 1)} )
+        width: $iphone-width * nth($params, 2)
+        height: $iphone-height * nth($params, 2)
+        left: calc(50% + #{$ipad-width * nth($params, 2) / 2} - #{$iphone-width * nth($params, 2) / 2})
+        bottom: -1 * $iphone-height * nth($params, 2) * 0.2
+
+
+  &>.ipad
+    position: relative
+    margin-left: auto
+    margin-right: auto
+    height: $ipad-height
+    width: $ipad-width
+    left: 0
+    bottom: 0
+    z-index: 0
+
+    @each $params in $size-change
+      @media screen and ( max-width: #{nth($params, 1)} )
+        width: $ipad-width * nth($params, 2)
+        height: $ipad-height * nth($params, 2)

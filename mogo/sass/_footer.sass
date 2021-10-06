@@ -1,0 +1,241 @@
+@use 'all'
+
+footer
+  @extend %content
+
+  @media screen and ( max-width: 900px )
+    padding-bottom: 1rem
+
+  &>div
+    @extend %element
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    @media screen and ( max-width: 900px )
+      flex-wrap: wrap
+
+    &>*
+      width: 27%
+      display: flex
+      flex-direction: column
+      // justify-content: space-between
+
+      @media screen and ( max-width: 900px )
+        width: 45%
+
+      @media screen and ( max-width: 600px )
+        width: 100%
+
+        &>*
+          margin-bottom: 3rem
+
+        &>*:nth-last-child(1)
+          margin-bottom: 0
+
+    .mogo
+      width: 37%
+
+      @media screen and ( max-width: 900px )
+        width: 100%
+        margin-bottom: 2rem
+
+      @media screen and ( max-width: 600px )
+        margin-bottom: 3rem
+
+      &>*
+        margin-bottom: 1.5rem
+
+      &>*:nth-last-child(1)
+        margin-bottom: 0
+
+.mogo-title
+  font-family: 'Montserrat'
+  font-weight: 800
+  font-size: 4rem
+  color: #ccc
+
+.mogo-text
+  font-family: 'Roboto'
+  font-weight: 500
+  font-size: 1rem
+  color: all.$def-gray
+
+.mogo-social-content>*
+  margin-bottom: 0.8rem
+
+.mogo-social-content>*:nth-last-child(1)
+  margin-bottom: 0
+
+.mogo-followers
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.mogo-followers>*
+  margin-right: 0.5rem
+  font-family: 'Roboto'
+  color: #000
+
+.mogo-fnumber
+  font-weight: 800
+  font-size: 1.5rem
+
+.mogo-ftext
+  font-weight: 500
+  font-size: 1rem
+
+.mogo-social
+  display: flex
+  flex-direction: row
+  align-items: center
+
+.soc-text
+  font-family: 'Roboto'
+  font-weight: 300
+  font-style: italic
+  font-size: 1rem
+  color: #ccc
+  margin-right: 2rem
+  flex-grow: 1
+
+.soc-links
+  display: flex
+  flex-direction: row
+  align-items: center
+
+  @media screen and ( max-width: 500px )
+    flex-wrap: wrap
+
+.soc-links>*
+  margin-right: 1rem
+
+.soc-links>*:nth-last-child(1)
+  margin-right: 0
+
+.soc-link
+  width: 5%
+  position: relative
+  cursor: pointer
+
+  @media screen and ( max-width: 600px )
+    width: 7%
+
+  @media screen and ( max-width: 500px )
+    width: 10%
+    margin-bottom: 0.5rem
+    
+
+.subscribe
+  display: flex
+  flex-direction: row
+
+  .input
+    height: 3rem
+    width: 50%
+    border: solid 2px #ccc
+    box-sizing: border-box
+    display: flex
+    flex-direction: row
+    justify-content: center
+    align-items: center
+
+    &>input
+      font-family: 'Roboto'
+      font-weight: 300
+      font-style: italic
+      font-size: 1rem
+      border: 0px
+      width: calc( 100% - 2rem )
+      outline: none
+
+  button
+    width: 30%
+    background-color: all.$def-birch
+    height: 3rem
+    position: relative
+    top: 0
+    left: -2px
+    display: flex
+    flex-direction: row
+    align-items: center
+    justify-content: center
+    font-family: 'Montserrat'
+    font-weight: 800
+    font-size: 1rem
+    text-transform: uppercase
+    color: #fff
+    border: 0px 
+    cursor: pointer
+    transition: 0.5s
+
+    @media screen and ( max-width: 500px )
+      width: 40%
+
+    &:hover
+      background-color: all.$def-line-color
+
+.mogo-blogs
+  justify-content: unset
+
+.mb-title, .mi-title
+  font-family: 'Montserrat'
+  font-size: 1rem
+  font-weight: 500
+  text-transform: uppercase
+  color: #000
+  margin-top: 1rem
+  margin-bottom: 3rem
+
+.mb-content>*
+  margin-bottom: 2rem
+
+.mb-content>*:nth-last-child(1)
+  margin-bottom: 0
+
+.mb-item
+  display: flex
+  flex-direction: row
+  justify-content: space-between
+
+.mb-photo
+  width: 40%
+
+.mb-text
+  width: 55%
+  margin-top: 0.5rem
+
+  &>.mb-title
+    margin-bottom: 0.7rem
+    font-size: 0.8rem
+
+.mb-date, .mi-link
+  font-family: 'Roboto'
+  font-weight: 300
+  font-style: italic
+  font-size: 0.7rem
+  color: #ccc
+
+.mi-content
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+  margin-bottom: 1.5rem
+
+  &>*
+    width: 30%
+    margin-right: 5px
+    margin-bottom: 5px
+
+.mi-link
+  color: all.$def-gray
+  display: block
+  width: 100%
+  transition: 0.2s
+
+  &:hover
+    color: all.$def-birch
+
+  &:visited
+    // color: all.$def-line-color    
+  

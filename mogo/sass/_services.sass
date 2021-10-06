@@ -1,0 +1,61 @@
+@use 'all'
+
+#services
+  @extend %content
+  padding-bottom: 5rem
+
+  &>.ser-content
+    @extend %element
+    display: flex
+    flex-direction: row
+    flex-wrap: wrap
+    justify-content: space-between
+
+    @media screen and ( max-width: 500px )
+      flex-direction: column
+      justify-content: center
+      flex-wrap: nowrap
+
+    &>.ser-item
+      width: 30%
+      margin-top: 4rem
+      margin-bottom: 1rem
+      display: flex
+      flex-direction: row
+      justify-content: center
+      position: relative
+
+      @media screen and ( max-width: 800px )
+        width: 45%
+
+      @media screen and ( max-width: 500px )
+        width: 100%
+        justify-content: space-around
+
+
+      &>.ser-icon
+        width: 12%
+        margin-right: 8%
+
+        @media screen and ( max-width: 800px )
+          width: 25%
+
+      &>.ser-desc
+        width: 65%
+
+        @media screen and ( max-width: 800px )
+          width: 60%
+
+        &>.ser-title
+          font-family: 'Montserrat'
+          font-weight: 500
+          font-size: 1.3rem
+          text-transform: uppercase
+          color: #000
+
+        &>.ser-text
+          font-family: 'Roboto'
+          font-weight: 500
+          font-size: 0.9rem
+          color: all.$def-gray
+          margin-top: 1rem

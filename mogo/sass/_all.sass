@@ -1,0 +1,95 @@
+$def-width: 65%
+$z-contindex: 3
+$def-pink: #ec7274
+$def-yellow: #eed78a
+$def-gray: #999
+$def-birch: #95e1d3
+$def-line-color: #f38181
+$line-height: 5px
+$line-margin-top: 2rem
+
+* 
+  margin: 0
+  padding: 0
+  border: 0
+  background: #00000000
+  border-radius: 0
+
+.line
+  height: $line-height
+  margin-top: $line-margin-top
+  width: 5rem
+  background: $def-line-color
+  margin-left: auto
+  margin-right: auto
+
+.body-stop
+  overflow: hidden
+
+.title
+  color: #000
+
+  &>*:nth-child(1)
+    font-family: 'Kaushan Script'
+    font-weight: 500
+    font-size: 2rem
+    text-align: center
+
+    @media screen and ( max-width: 400px )
+      font-size: 1.5rem
+
+  &>*:nth-child(2)
+    font-family: 'Montserrat'
+    font-weight: 700
+    font-size: 2.5rem
+    text-transform: uppercase
+    text-align: center
+    margin-top: 0.7rem
+
+    @media screen and ( max-width: 400px )
+      font-size: 2rem
+
+.description
+  width: 50%
+  margin-top: 2rem
+  margin-right: auto
+  margin-left: auto
+  color: $def-gray
+  font-family: 'Roboto'
+  font-weight: 500
+  font-size: 1rem
+  text-align: center
+
+  @media screen and ( max-width: 1200px )
+    width: 70%
+
+img, object
+  width: 100%
+  display: block
+
+.underline
+  width: 100%
+  height: 1px
+  background-color: #e5e5e5
+
+.cover
+  width: 100%
+  height: 100%
+  position: absolute
+  top: 0
+  left: 0
+
+%content
+  position: relative
+  width: 100%
+  background: #fff
+  padding-top: 6rem
+  padding-bottom: 6rem
+
+%element
+  width: $def-width
+  margin-left: auto
+  margin-right: auto
+
+  @media screen and ( max-width: 1400px )
+    width: 90%

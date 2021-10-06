@@ -1,0 +1,99 @@
+@use 'all'
+
+.slider
+  @extend %element
+  display: flex
+  flex-direction: row
+  justify-content: space-around
+  align-items: center
+
+  &>.back-arrow, &>.forward-arrow
+    width: 3%
+    transition: 0.2s
+    position: relative
+    align-self: stretch
+    display: flex
+    align-items: center
+
+    @media screen and ( max-width: 600px )
+      display: none
+
+    &>*
+      display: block
+      width: 100%
+
+    &>.cover
+      cursor: pointer
+
+  &>.back-arrow
+    &>*
+      transform: rotate(180deg)
+
+.slider-content
+  width: 80%
+  overflow-x: hidden
+
+  @media screen and ( max-width: 600px )
+    width: 100%
+
+  &>.slides
+    display: flex
+    width: max-content
+    position: relative
+    top: 0
+    left: 0
+    // transition: 0.7s ease-out
+
+    &>*:nth-child(1)
+      margin: 0
+
+    &>*:nth-last-child(1)
+      margin: 0
+
+    &>*
+      margin-left: 3rem
+      margin-right: 3rem
+
+  .slide
+    display: flex
+    flex-direction: row
+    justify-content: space-between
+
+    .slide-sq-image
+      width: 12%
+
+    .slide-text
+      width: 84%
+
+    .slide-quote
+      color: #999
+      font-family: 'Roboto'
+      font-weight: 300
+      font-style: italic
+      font-size: 1.5rem
+
+      @media screen and ( max-width: 600px )
+        font-size: 1rem
+    
+    .slide-postscript
+      margin-top: 1rem
+      display: flex
+      flex-direction: row
+      align-items: center
+
+      .q-line
+        height: 5px
+        width: 10%
+        background: #f38181
+        margin-right: 0.5rem
+
+        @media screen and ( max-width: 600px )
+          width: 20%
+
+      .q-author
+        font-family: 'Kaushan Script'
+        font-size: 2rem
+        color: #000
+
+.no-transition
+  transition: none !important

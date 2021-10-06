@@ -1,0 +1,86 @@
+@use 'all'
+
+$map-icon-width: 2.5rem
+
+#map_block
+  padding-top: 3rem
+  padding-bottom: 3rem
+  width: 100%
+  background: #00000000
+
+.map-title
+  margin-bottom: 5rem
+
+.map-title>*
+  margin-bottom: 1.5rem
+
+.map-title>*:nth-last-child(1)
+  margin-bottom: 0
+
+.map-icon
+  width: $map-icon-width
+  margin-left: auto
+  margin-right: auto
+
+  // @media screen and ( max-width: 800px )
+  //   width: $map-icon-width*2
+
+.map-text
+  font-family: 'Montserrat'
+  font-weight: 800
+  font-size: 3rem
+  text-transform: uppercase
+  color: all.$def-line-color
+  text-align: center
+
+.map-line
+  width: 3*$map-icon-width
+  background-color: all.$def-line-color
+  height: all.$line-height
+  margin-left: auto
+  margin-right: auto
+
+.map-content
+  @extend %element
+
+  &>*
+    width: 100%
+
+.map-info
+  padding: 2rem 0 2rem 3rem
+  background-color: #ffffff
+
+.map-info>*
+  margin-bottom: 1rem
+
+.map-info>*:nth-last-child(1)
+  margin-bottom: 0
+
+.map-info-title
+  font-family: 'Montserrat'
+  font-weight: 800
+  font-size: 2rem
+  color: #000
+  text-transform: uppercase
+
+.map-info-desc
+  font-family: 'Roboto'
+  font-weight: 500
+  font-size: 1rem
+  color: all.$def-gray
+
+.map-ballon-header
+  font-family: 'Montserrat'
+  font-weight: 500
+  font-size: 1.5rem
+  color: #000
+  text-transform: uppercase
+
+.map-ballon-body
+  font-family: 'Roboto'
+  font-weight: 500
+  font-size: 1rem
+  color: all.$def-gray
+  
+
+

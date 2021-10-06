@@ -1,0 +1,92 @@
+@use 'all'
+
+$bur-top-height: 4rem
+$bur-border-width: 1px
+
+.burger
+  &>*
+    margin-bottom: 0.5rem
+
+  &>*:nth-last-child(1)
+    margin: 0
+    
+.bur-top
+  display: flex
+  position: relative
+  top: 0
+  left: 0
+  z-index: all.$z-contindex + 1
+  flex-direction: row
+  height: $bur-top-height
+  align-items: center
+  border: $bur-border-width solid #e5e5e5
+  box-sizing: border-box
+  cursor: pointer
+  background: #fff
+
+.bur-icon, .bur-arrow
+  margin: 0 1rem 0
+
+  @media screen and ( min-width: 600px )
+    width: 5%
+
+  @media screen and ( max-width: 1200px )
+    width: 3%
+
+  @media screen and ( max-width: 600px )
+    width: 7%
+
+  @media screen and ( min-width: 1200px )
+    height: 40%
+
+  &>img
+    @media screen and ( max-width: 1200px )
+      width: 100%
+
+    @media screen and ( min-width: 1200px )
+      height: 100%
+
+.bur-arrow
+    transition: 0.5s all
+    transform: rotate(90deg)
+
+.bur-title
+  font-family: 'Montserrat'
+  font-weight: 500
+  font-size: 1rem
+  text-transform: uppercase
+  color: #000
+  flex-grow: 1
+  user-select: none
+
+.bur-desc
+  width: 100%
+  position: relative
+  top: -1 * $bur-top-height
+  left: 0
+  z-index: all.$z-contindex
+  box-sizing: border-box
+  border: solid 0 #e5e5e5
+  height: 0
+  overflow: hidden
+  transition: 1s all
+
+.bur-wrapper
+  width: calc(100% - 2rem)
+  height: calc(100% - 2rem)
+  margin: 1rem
+  color: #999
+  font-family: 'Roboto'
+  font-style: italic
+  font-weight: 300
+
+.bur-desc-show
+  .bur-arrow
+    transform: rotate(-90deg)
+
+  .bur-desc
+    top: -1 * $bur-border-width
+    border: solid $bur-border-width #e5e5e5
+
+.no-scrollbar
+  display: none !important

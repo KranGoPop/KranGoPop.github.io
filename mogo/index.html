@@ -1,0 +1,866 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MoGo</title>
+  <link href="https://fonts.googleapis.com/css2?family=Kaushan+Script&family=Montserrat:wght@500;700&family=Roboto:ital,wght@0,500;1,300&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="./main.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.min.js"></script>
+  <script src="https://api-maps.yandex.ru/2.1/?apikey=0d558971-c4bd-4676-8ded-9031a8335d64&lang=ru_RU" type="text/javascript"></script>
+  <script src="./scrollbar.min.js"></script>
+</head>
+<body>
+  <div class="fixed-background">
+    <div class="fixed-cover">
+      <div class="fixed-item" style="background-image: url('./img/mountains.png');"></div>
+      <div class="fixed-item" style="background-image: url('./img/mountains2.jpg');"></div>
+      <div class="fixed-item" style="background-image: url('./img/mountains3.jpg');"></div>
+    </div>
+  </div>
+  <div class="mobile-nav-bar">
+    <div class="exit-line"></div>
+    <div class="exit-line"></div>
+    <button class="mobile-exit-button">
+    </button>
+    <nav>
+      <div class="mobile-anchor">About</div>
+      <div class="mobile-anchor">Services</div>
+      <div class="mobile-anchor">Work</div>
+      <div class="mobile-anchor">Blog</div>
+      <div class="mobile-anchor">Contact</div>
+    </nav>
+  </div>
+  <header>
+    <div class="h-background" style="background-image: url('./img/top-bg.png');"></div>
+    <div class="h-gradient"></div>
+    <div class="h-content">
+      <div class="top">
+        <div class="logo">MoGo</div>
+        <nav>
+          <div class="anchor">About</div>
+          <div class="anchor">Services</div>
+          <div class="anchor">Work</div>
+          <div class="anchor">Blog</div>
+          <div class="anchor">Contact</div>
+        </nav>
+        <button class="mobile-button">
+          <div class="line-decore"></div>
+          <div class="line-decore"></div>
+        </button>
+      </div>
+      <div class="text">
+        <div>Creative Template</div>
+        <div>welcome<br>to mogo</div>
+      </div>
+      <div class="line"></div>
+      <button class="more">learn more</button>
+    </div>
+  </header>
+  <div id="about_us">
+    <div class="title">
+      <div>What we do</div>
+      <div>story about us</div>
+    </div>
+    <div class="line"></div>
+    <div class="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas dignissimos incidunt soluta nam necessitatibus tempore animi doloremque, 
+      sapiente mollitia? Laudantium nobis aspernatur, et similique in quos soluta dolorum sunt quibusdam!
+    </div>
+    <div class="gallery">
+      <div class="g-item">
+        <div class="photo">
+          <div class="bg"></div>
+          <div class="origin">
+            <img src="./img/abup1.png">
+          </div>
+          <div class="fg"></div>
+          <div class="exp">
+            <div class="g-icon">
+              <img src="./img/team.svg">
+            </div>
+            <div class="g-text">super team</div>
+          </div>
+        </div>
+      </div>
+      <div class="g-item">
+        <div class="photo">
+          <div class="bg"></div>
+          <div class="origin">
+            <img src="./img/abup2.png">
+          </div>
+          <div class="fg"></div>
+          <div class="exp">
+            <div class="g-icon">
+              <img src="./img/workplace.svg">
+            </div>
+            <div class="g-text">super place</div>
+          </div>
+        </div>
+      </div>
+      <div class="g-item">
+        <div class="photo">
+          <div class="bg"></div>
+          <div class="origin">
+            <img src="./img/abup3.png">
+          </div>
+          <div class="fg"></div>
+          <div class="exp">
+            <div class="g-icon">
+              <img src="./img/plant.svg">
+            </div>
+            <div class="g-text">super plant</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="statistics">
+    <div class="stat-item">
+      <div class="number">42</div>
+      <div class="desc">web design projects</div>
+    </div>
+    <div class="stat-item">
+      <div class="number">123</div>
+      <div class="desc">happy clients</div>
+    </div>
+    <div class="stat-item">
+      <div class="number">15</div>
+      <div class="desc">award winner</div>
+    </div>
+    <div class="stat-item">
+      <div class="number">99</div>
+      <div class="desc">cup of coffee</div>
+    </div>
+    <div class="stat-item">
+      <div class="number">24</div>
+      <div class="desc">members</div>
+    </div>
+  </div>
+  <div id="services">
+    <div class="title">
+      <div>We work with</div>
+      <div>amazing services</div>
+    </div>
+    <div class="line"></div>
+    <div class="ser-content">
+      <div class="ser-item">
+        <div class="ser-icon"><img src="./img/photography.svg" alt=""></div>
+        <div class="ser-desc">
+          <div class="ser-title">photography</div>
+          <div class="ser-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+      <div class="ser-item">
+        <div class="ser-icon"><img src="./img/webdesign.svg" alt=""></div>
+        <div class="ser-desc">
+          <div class="ser-title">web design</div>
+          <div class="ser-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+      <div class="ser-item">
+        <div class="ser-icon"><img src="./img/creativity.svg" alt=""></div>
+        <div class="ser-desc">
+          <div class="ser-title">creativity</div>
+          <div class="ser-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+      <div class="ser-item">
+        <div class="ser-icon"><img src="./img/seo.svg" alt=""></div>
+        <div class="ser-desc">
+          <div class="ser-title">seo</div>
+          <div class="ser-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+      <div class="ser-item">
+        <div class="ser-icon"><img src="./img/htmlcss.svg" alt=""></div>
+        <div class="ser-desc">
+          <div class="ser-title">css/html</div>
+          <div class="ser-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+      <div class="ser-item">
+        <div class="ser-icon"><img src="./img/digital.svg" alt=""></div>
+        <div class="ser-desc">
+          <div class="ser-title">digital</div>
+          <div class="ser-text">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="design">
+    <div class="title">
+      <div>For all devices</div>
+      <div>unique design</div>
+    </div>
+    <div class="line"></div>
+    <div class="ipad">
+      <img src="./img/ipad.png" alt="">
+    </div>
+    <div class="iphone">
+      <img src="./img/iphone.png" alt="">
+    </div>
+  </div>
+  <div id="what_we_do">
+    <div class="test" style="display: none;"></div>
+    <div class="title">
+      <div>Service</div>
+      <div>what we do</div>
+    </div>
+    <div class="line"></div>
+    <div class="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Aliquid, id accusamus.
+      Labore, ab dolorem. Doloribus accusamus soluta exercitationem beatae distinctio quas, maiores veritatis. Neque sed pariatur assumenda dicta explicabo quae.
+    </div>
+    <div class="wwd_exp">
+      <div class="vslider">
+        <div class="vslider-content">
+          <div class="vslide">
+            <img src="./img/photography.png" alt="">
+          </div>
+          <div class="vslide">
+            <img src="./img/creativity.png" alt="">
+          </div>
+          <div class="vslide">
+            <img src="./img/web_design.png" alt="">
+          </div>
+        </div>
+      </div>
+      <div class="burger">
+        <div class="bur-item">
+          <div class="bur-top">
+            <div class="bur-icon">
+              <img src="./img/image.svg" alt="">
+            </div>
+            <div class="bur-title">photography</div>
+            <div class="bur-arrow"><img src="./img/arrow.svg" alt=""></div>
+          </div>
+          <div class="bur-desc">
+            <div class="bur-wrapper" ss-container>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus optio dicta assumenda inventore odit perferendis!
+              Illum consectetur praesentium ipsum iste culpa voluptates, numquam, sit atque cupiditate odit ab quod!
+              Dolor mollitia culpa odio dignissimos praesentium nam! Nam, maxime culpa? Sed animi quae reiciendis quod aliquam 
+              tempore soluta praesentium distinctio dolorum, dicta necessitatibus libero? Deleniti laborum nemo sint modi corporis.
+              Dolor quia laboriosam ut quis accusamus voluptatibus quidem et, sed veritatis accusantium optio officiis, corrupti, 
+              recusandae repellendus neque voluptatum dolorum tempore illum laborum. Deserunt magnam blanditiis odit, in nostrum exercitationem?
+            </div>
+          </div>
+        </div>
+        <div class="bur-item">
+          <div class="bur-top">
+            <div class="bur-icon">
+              <img src="./img/settings.svg" alt="">
+            </div>
+            <div class="bur-title">creativity</div>
+            <div class="bur-arrow"><img src="./img/arrow.svg" alt=""></div>
+          </div>
+          <div class="bur-desc">
+            <div class="bur-wrapper" ss-container>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus optio dicta assumenda inventore odit perferendis!
+              Illum consectetur praesentium ipsum iste culpa voluptates, numquam, sit atque cupiditate odit ab quod!
+              Dolor mollitia culpa odio dignissimos praesentium nam! Nam, maxime culpa? Sed animi quae reiciendis quod aliquam 
+              tempore soluta praesentium distinctio dolorum, dicta necessitatibus libero? Deleniti laborum nemo sint modi corporis.
+              Dolor quia laboriosam ut quis accusamus voluptatibus quidem et, sed veritatis accusantium optio officiis, corrupti, 
+              recusandae repellendus neque voluptatum dolorum tempore illum laborum. Deserunt magnam blanditiis odit, in nostrum exercitationem?
+            </div>
+          </div>
+        </div>
+        <div class="bur-item">
+          <div class="bur-top">
+            <div class="bur-icon">
+              <img src="./img/radial.svg" alt="">
+            </div>
+            <div class="bur-title">web design</div>
+            <div class="bur-arrow"><img src="./img/arrow.svg" alt=""></div>
+          </div>
+          <div class="bur-desc">
+            <div class="bur-wrapper" ss-container>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut repellendus optio dicta assumenda inventore odit perferendis!
+              Illum consectetur praesentium ipsum iste culpa voluptates, numquam, sit atque cupiditate odit ab quod!
+              Dolor mollitia culpa odio dignissimos praesentium nam! Nam, maxime culpa? Sed animi quae reiciendis quod aliquam 
+              tempore soluta praesentium distinctio dolorum, dicta necessitatibus libero? Deleniti laborum nemo sint modi corporis.
+              Dolor quia laboriosam ut quis accusamus voluptatibus quidem et, sed veritatis accusantium optio officiis, corrupti, 
+              recusandae repellendus neque voluptatum dolorum tempore illum laborum. Deserunt magnam blanditiis odit, in nostrum exercitationem?
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="quotes">
+    <div class="slider">
+      <div class="back-arrow">
+        <object data="./img/arrow.svg" type="image/svg+xml"></object>
+        <div class="cover"></div>
+      </div>
+      <div class="slider-content">
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-sq-image"><img src="./img/slide-image-1.svg" alt=""></div>
+            <div class="slide-text">
+              <div class="slide-quote">
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iste praesentium illum
+                 totam repellendus assumenda nesciunt sed corrupti officia maxime, obcaecati facilis? Ipsum earum commodi ipsa sit, in accusamus omnis.</q>
+              </div>
+              <div class="slide-postscript">
+                <div class="q-line"></div>
+                <div class="q-author">Jon Doe</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-sq-image"><img src="./img/slide-image-2.svg" alt=""></div>
+            <div class="slide-text">
+              <div class="slide-quote">
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iste praesentium illum
+                  totam repellendus assumenda nesciunt sed corrupti officia maxime, obcaecati facilis? Ipsum earum commodi ipsa sit, in accusamus omnis.</q>
+              </div>
+              <div class="slide-postscript">
+                <div class="q-line"></div>
+                <div class="q-author">Doe Jack</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-sq-image"><img src="./img/slide-image-3.svg" alt=""></div>
+            <div class="slide-text">
+              <div class="slide-quote">
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iste praesentium illum
+                  totam repellendus assumenda nesciunt sed corrupti officia maxime, obcaecati facilis? Ipsum earum commodi ipsa sit, in accusamus omnis.</q>
+              </div>
+              <div class="slide-postscript">
+                <div class="q-line"></div>
+                <div class="q-author">Jack Moff</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="forward-arrow">
+        <object data="./img/arrow.svg" type="image/svg+xml"></object>
+        <div class="cover"></div>
+      </div>
+    </div>
+  </div>
+  <div id="meet_our_team">
+    <div class="title">
+      <div>Whe we are</div>
+      <div>meet our team</div>
+    </div>
+    <div class="line"></div>
+    <div class="description">
+      Lorem ipsum dolor sit, amet consectetur adipisicing elit. Minus nisi expedita, laboriosam nesciunt exercitationem 
+      aliquam placeat debitis reiciendis sunt, nam temporibus earum nobis explicabo commodi molestiae? Praesentium dignissimos nam voluptate.
+    </div>
+    <div class="gallery">
+      <div class="g-item">
+        <div class="photo">
+          <div class="bg"></div>
+          <div class="origin"><img src="./img/teammate1.png" alt=""></div>
+          <div class="fg"></div>
+          <div class="share">
+            <div class="sn-item">
+              <object data="./img/facebook.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+            <div class="sn-item">
+              <object data="./img/twitter.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+            <div class="sn-item">
+              <object data="./img/vk.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+            <div class="sn-item">
+              <object data="./img/instagram.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+          </div>
+        </div>
+        <div class="g-desc">
+          <div class="g-who">Mitka Vinkov</div>
+          <div class="g-proff">JS Developer</div>
+        </div>
+      </div>
+      <div class="g-item">
+        <div class="photo">
+          <div class="bg"></div>
+          <div class="origin"><img src="./img/teammate2.png" alt=""></div>
+          <div class="fg"></div>
+          <div class="share">
+            <div class="sn-item">
+              <object data="./img/facebook.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+            <div class="sn-item">
+              <object data="./img/twitter.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+            <div class="sn-item">
+              <object data="./img/vk.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+            <div class="sn-item">
+              <object data="./img/instagram.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+          </div>
+        </div>
+        <div class="g-desc">
+          <div class="g-who">Volodia Marshev</div>
+          <div class="g-proff">Web Designer</div>
+        </div>
+      </div>
+      <div class="g-item">
+        <div class="photo">
+          <div class="bg"></div>
+          <div class="origin"><img src="./img/teammate3.png" alt=""></div>
+          <div class="fg"></div>
+          <div class="share">
+            <div class="sn-item">
+              <object data="./img/facebook.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+            <div class="sn-item">
+              <object data="./img/twitter.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+            <div class="sn-item">
+              <object data="./img/vk.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+            <div class="sn-item">
+              <object data="./img/instagram.svg" type="image/svg+xml"></object>
+              <div class="cover"></div>
+            </div>
+          </div>
+        </div>
+        <div class="g-desc">
+          <div class="g-who">Malenkov Diory</div>
+          <div class="g-proff">Backend Developer</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="partners">
+    <div class="p-wrapper">
+      <div class="partner">
+        <img src="./img/partner1.png" alt="">
+      </div>
+      <div class="partner">
+        <img src="./img/partner2.png" alt="">
+      </div>
+      <div class="partner">
+        <img src="./img/partner3.png" alt="">
+      </div>
+      <div class="partner">
+        <img src="./img/partner4.png" alt="">
+      </div>
+      <div class="partner">
+        <img src="./img/partner5.png" alt="">
+      </div>
+      <div class="partner">
+        <img src="./img/partner6.png" alt="">
+      </div>
+    </div>
+  </div>
+  <div id="our_work">
+    <div class="title">
+      <div>What we do</div>
+      <div>some of our work</div>
+    </div>
+    <div class="line"></div>
+    <div class="description">
+      Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet pariatur aliquam voluptatem temporibus tempore
+      tempora facilis, inventore veritatis impedit, itaque quaerat quas eaque unde voluptatibus. Expedita accusantium dicta quam optio.
+    </div>
+    <div class="portfolio">
+      <div class="portf-hor-half-part portf-wrapped-list">
+        <div class="portf-item portfhhp">
+          <div class="portf-origin"><img src="./img/work1.png" alt=""></div>
+          <div class="portf-fg"></div>
+          <div class="portf-exp">
+            <div class="exp-icon"><img src="./img/wimage.svg" alt=""></div>
+            <div class="exp-title">sdjnfjsdkfnskjd</div>
+            <div class="exp-desc">kjklkbdknsjn</div>
+          </div>
+        </div>
+        <div class="portf-item portfhhp">
+          <div class="portf-origin"><img src="./img/work2.png" alt=""></div>
+          <div class="portf-fg"></div>
+          <div class="portf-exp">
+            <div class="exp-icon"><img src="./img/wimage.svg" alt=""></div>
+            <div class="exp-title">sdjnfjsdkfnskjd</div>
+            <div class="exp-desc">kjklkbdknsjn</div>
+          </div>
+        </div>
+        <div class="portf-item portfhhp">
+          <div class="portf-origin"><img src="./img/work3.png" alt=""></div>
+          <div class="portf-fg"></div>
+          <div class="portf-exp">
+            <div class="exp-icon"><img src="./img/wimage.svg" alt=""></div>
+            <div class="exp-title">sdjnfjsdkfnskjd</div>
+            <div class="exp-desc">kjklkbdknsjn</div>
+          </div>
+        </div>
+        <div class="portf-item portfhhp">
+          <div class="portf-origin"><img src="./img/work4.png" alt=""></div>
+          <div class="portf-fg"></div>
+          <div class="portf-exp">
+            <div class="exp-icon"><img src="./img/wimage.svg" alt=""></div>
+            <div class="exp-title">sdjnfjsdkfnskjd</div>
+            <div class="exp-desc">kjklkbdknsjn</div>
+          </div>
+        </div>
+      </div>
+      <div class="portf-hor-half-part portf-hor-list">
+        <div class="portf-item portfhhp">
+          <div class="portf-origin"><img src="./img/work5.png" alt=""></div>
+          <div class="portf-fg"></div>
+          <div class="portf-exp">
+            <div class="exp-icon"><img src="./img/wimage.svg" alt=""></div>
+            <div class="exp-title">sdjnfjsdkfnskjd</div>
+            <div class="exp-desc">kjklkbdknsjn</div>
+          </div>
+        </div>
+        <div class="portf-ver-list portfhhp">
+          <div class="portf-item">
+            <div class="portf-origin"><img src="./img/work6.png" alt=""></div>
+            <div class="portf-fg"></div>
+            <div class="portf-exp">
+              <div class="exp-icon"><img src="./img/wimage.svg" alt=""></div>
+              <div class="exp-title">sdjnfjsdkfnskjd</div>
+              <div class="exp-desc">kjklkbdknsjn</div>
+            </div>
+          </div>
+          <div class="portf-item">
+            <div class="portf-origin"><img src="./img/work7.png" alt=""></div>
+            <div class="portf-fg"></div>
+            <div class="portf-exp">
+              <div class="exp-icon"><img src="./img/wimage.svg" alt=""></div>
+              <div class="exp-title">sdjnfjsdkfnskjd</div>
+              <div class="exp-desc">kjklkbdknsjn</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="reviews">
+    <div class="slider">
+      <div class="back-arrow">
+        <object data="./img/arrow.svg" type="image/svg+xml"></object>
+        <div class="cover"></div>
+      </div>
+      <div class="slider-content">
+        <div class="slides">
+          <div class="slide">
+            <div class="slide-sq-image"><img src="./img/reviewer.png" alt=""></div>
+            <div class="slide-text">
+              <div class="slide-quote">
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iste praesentium illum
+                 totam repellendus assumenda nesciunt sed corrupti officia maxime, obcaecati facilis? Ipsum earum commodi ipsa sit, in accusamus omnis.</q>
+              </div>
+              <div class="slide-postscript">
+                <div class="q-line"></div>
+                <div class="q-author">Jon Doe</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-sq-image"><img src="./img/reviewer.png" alt=""></div>
+            <div class="slide-text">
+              <div class="slide-quote">
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iste praesentium illum
+                  totam repellendus assumenda nesciunt sed corrupti officia maxime, obcaecati facilis? Ipsum earum commodi ipsa sit, in accusamus omnis.</q>
+              </div>
+              <div class="slide-postscript">
+                <div class="q-line"></div>
+                <div class="q-author">Doe Jack</div>
+              </div>
+            </div>
+          </div>
+          <div class="slide">
+            <div class="slide-sq-image"><img src="./img/reviewer.png" alt=""></div>
+            <div class="slide-text">
+              <div class="slide-quote">
+                <q>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quia iste praesentium illum
+                  totam repellendus assumenda nesciunt sed corrupti officia maxime, obcaecati facilis? Ipsum earum commodi ipsa sit, in accusamus omnis.</q>
+              </div>
+              <div class="slide-postscript">
+                <div class="q-line"></div>
+                <div class="q-author">Jack Moff</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="forward-arrow">
+        <object data="./img/arrow.svg" type="image/svg+xml"></object>
+        <div class="cover"></div>
+      </div>
+    </div>
+  </div>
+  <div id="happy_clients">
+    <div class="title">
+      <div>Happy Clients</div>
+      <div>what people say</div>
+    </div>
+    <div class="line"></div>
+    <div class="clients">
+      <div class="client">
+        <div class="c-photo"><img src="./img/client1.png" alt=""></div>
+        <div class="c-info">
+          <div class="c-name">Michail Delenkov</div>
+          <div class="c-proffecion">UX/UI Designer</div>
+          <div class="c-line"></div>
+          <div class="c-review">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Obcaecati atque 
+            exercitationem maiores impedit porro, reiciendis nam dolorem!
+          </div>
+        </div>
+      </div>
+      <div class="client">
+        <div class="c-photo"><img src="./img/client2.png" alt=""></div>
+        <div class="c-info">
+          <div class="c-name">Nikolai Krafchyk</div>
+          <div class="c-proffecion">JS Developer</div>
+          <div class="c-line"></div>
+          <div class="c-review">
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. 
+            Maxime debitis consectetur nulla dolorum ipsam voluptate sunt accusamus error.
+          </div>
+        </div>
+      </div>
+      <div class="client">
+        <div class="c-photo"><img src="./img/client3.png" alt=""></div>
+        <div class="c-info">
+          <div class="c-name">Jordano de Facento</div>
+          <div class="c-proffecion">Backend Developer</div>
+          <div class="c-line"></div>
+          <div class="c-review">
+            Lorem ipsum dolor sit amet consectetur explicabo, saepe consequuntur officiis excepturi
+            alias unde blanditiis. Velit esse provident, error at cumque harum?
+          </div>
+        </div>
+      </div>
+      <div class="client">
+        <div class="c-photo"><img src="./img/client4.png" alt=""></div>
+        <div class="c-info">
+          <div class="c-name">Mikel Belyaev</div>
+          <div class="c-proffecion">Fullstack Develper</div>
+          <div class="c-line"></div>
+          <div class="c-review">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+            Porro exercitationem dolorem accusantium ipsa veritatis maxime temporibus ex.
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="blog">
+    <div class="title">
+      <div>Our stories</div>
+      <div>latest blog</div>
+    </div>
+    <div class="line"></div>
+    <div class="blog">
+      <div class="record">
+        <div class="record-top">
+          <div class="record-photo"><img src="./img/blog1.jpg" alt=""></div>
+          <div class="record-date">
+            <div class="date-day">15</div>
+            <div class="date-month">Jan</div>
+          </div>
+        </div>
+        <div class="record-title">lajkndf sdjsnr sjksjd</div>
+        <div class="record-desc">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sunt ex maxime veritatis vel dolore omnis. Un de morent.
+        </div>
+        <div class="underline"></div>
+        <div class="record-response">
+          <div class="views">
+            <div class="view-icon"><img src="./img/eye.svg" alt=""></div>
+            <div class="view-number">542</div>
+          </div>
+          <div class="comments">
+            <div class="comment-icon"><img src="./img/comment.svg" alt=""></div>
+            <div class="comment-number">17</div>
+          </div>
+        </div>
+      </div>
+      <div class="record">
+        <div class="record-top">
+          <div class="record-photo"><img src="./img/blog2.jpg" alt=""></div>
+          <div class="record-date">
+            <div class="date-day">14</div>
+            <div class="date-month">Jan</div>
+          </div>
+        </div>
+        <div class="record-title">kjjkjnlkm ajsdjsdj</div>
+        <div class="record-desc">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Natus, optio corrupti! Harum voluptas sed ipsam cupiditate illum.
+        </div>
+        <div class="underline"></div>
+        <div class="record-response">
+          <div class="views">
+            <div class="view-icon"><img src="./img/eye.svg" alt=""></div>
+            <div class="view-number">992</div>
+          </div>
+          <div class="comments">
+            <div class="comment-icon"><img src="./img/comment.svg" alt=""></div>
+            <div class="comment-number">42</div>
+          </div>
+        </div>
+      </div>
+      <div class="record">
+        <div class="record-top">
+          <div class="record-photo"><img src="./img/blog3.jpg" alt=""></div>
+          <div class="record-date">
+            <div class="date-day">12</div>
+            <div class="date-month">Jan</div>
+          </div>
+        </div>
+        <div class="record-title">ksdjsdj sdksku ahsrhd</div>
+        <div class="record-desc">
+          Lorem ipsum dolor sit amet consectetur enim deleniti sequi temporibus nemo illum tempore praesentium dolor possimus.
+        </div>
+        <div class="underline"></div>
+        <div class="record-response">
+          <div class="views">
+            <div class="view-icon"><img src="./img/eye.svg" alt=""></div>
+            <div class="view-number">1560</div>
+          </div>
+          <div class="comments">
+            <div class="comment-icon"><img src="./img/comment.svg" alt=""></div>
+            <div class="comment-number">98</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div id="map_block">
+    <div class="map-title">
+      <div class="map-icon"><img src="./img/pointer.svg" alt=""></div>
+      <div class="map-text">open map</div>
+      <div class="map-line"></div>
+    </div>
+    <div class="map-content">
+      <div id="map"></div>
+    </div>
+  </div>
+  <footer>
+    <div>
+      <div class="mogo">
+        <div class="mogo-title">MoGo</div>
+        <div class="mogo-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint consequatur fugit, similique velit eligendi repellendus harum asperiores! Corporis quisquam, quia accusantium consequuntur nam iure harum minus ut, sed atque error?
+        Id quas molestias neque. Neque unde suscipit minus sit fugiat voluptatum ea optio repellendus explicabo. Quisquam, velit cumque voluptates quo, nisi facere non temporibus officia saepe quam aliquam itaque maxime?</div>
+        <div class="mogo-social-content">
+          <div class="mogo-followers">
+            <div class="mogo-fnumber">15k</div>
+            <div class="mogo-ftext">followers</div>
+          </div>
+          <div class="underline"></div>
+          <div class="mogo-social">
+            <div class="soc-text">Follow Us:</div>
+            <div class="soc-links">
+              <div class="soc-link">
+                <object data="./img/facebook.svg" alt=""></object>
+                <div class="cover"></div>
+              </div>
+              <div class="soc-link">
+                <object data="./img/twitter.svg" alt=""></object>
+                <div class="cover"></div>
+              </div>
+              <div class="soc-link">
+                <object data="./img/instagram.svg" alt=""></object>
+                <div class="cover"></div>
+              </div>
+              <div class="soc-link">
+                <object data="./img/vk.svg" alt=""></object>
+                <div class="cover"></div>
+              </div>
+              <div class="soc-link">
+                <object data="./img/google-plus.svg" alt=""></object>
+                <div class="cover"></div>
+              </div>
+              <div class="soc-link">
+                <object data="./img/youtube.svg" alt=""></object>
+                <div class="cover"></div>
+              </div>
+              <div class="soc-link">
+                <object data="./img/drupal-logo.svg" alt=""></object>
+                <div class="cover"></div>
+              </div>
+              <div class="soc-link">
+                <object data="./img/telegram.svg" alt=""></object>
+                <div class="cover"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="subscribe">
+          <div class="input"><input type="text" placeholder="Your Email..."></div>
+          <button>subscribe</button>
+        </div>
+      </div>
+      <div class="mogo-blogs">
+        <div class="mb-title">blogs</div>
+        <div class="mb-content">
+          <div class="mb-item">
+            <div class="mb-photo"><img src="./img/mblog1.jpg" alt=""></div>
+            <div class="mb-text">
+              <div class="mb-title">Lorem ipsum dolor sit amet</div>
+              <div class="mb-date">Jan 9, 2021</div>
+            </div>
+          </div>
+          <div class="mb-item">
+            <div class="mb-photo"><img src="./img/mblog2.jpg" alt=""></div>
+            <div class="mb-text">
+              <div class="mb-title">Repellendus accusantium</div>
+              <div class="mb-date">Nov 12, 2020</div>
+            </div>
+          </div>
+          <div class="mb-item">
+            <div class="mb-photo"><img src="./img/mblog3.jpg" alt=""></div>
+            <div class="mb-text">
+              <div class="mb-title">enim deleniti sequi</div>
+              <div class="mb-date">Sep 1, 2020</div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="mogo-instagram">
+        <div class="mi-title">instagram</div>
+        <div class="mi-content">
+          <div class="mi-item"><img src="./img/inst1.jpg" alt=""></div>
+          <div class="mi-item"><img src="./img/inst2.jpg" alt=""></div>
+          <div class="mi-item"><img src="./img/inst3.jpg" alt=""></div>
+          <div class="mi-item"><img src="./img/inst4.jpg" alt=""></div>
+          <div class="mi-item"><img src="./img/inst5.jpg" alt=""></div>
+          <div class="mi-item"><img src="./img/inst6.jpg" alt=""></div>
+          <div class="mi-item"><img src="./img/inst7.jpg" alt=""></div>
+          <div class="mi-item"><img src="./img/inst8.jpg" alt=""></div>
+          <div class="mi-item"><img src="./img/inst9.jpg" alt=""></div>
+          <a href="#" class="mi-link">View more photos</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <script src="./main.min.js"></script>
+</body>
+</html>

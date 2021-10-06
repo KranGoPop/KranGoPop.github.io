@@ -1,0 +1,92 @@
+@use 'all'
+
+.portfolio
+  margin-top: 5rem
+  width: 100%
+  display: flex
+  flex-direction: row
+
+  @media screen and ( max-width: 900px )
+    flex-direction: column
+
+.portf-hor-half-part
+  width: 50%
+
+  @media screen and ( max-width: 900px )
+    width: 100%
+
+.portfhhp
+  width: 50%
+
+.portf-wrapped-list
+  display: flex
+  flex-direction: row
+  flex-wrap: wrap
+
+.portf-hor-list
+  display: flex
+  flex-direction: row
+
+.portf-item
+  position: relative
+  cursor: pointer
+
+  &:hover .portf-exp
+    opacity: 1
+
+  &:hover .portf-fg
+    opacity: 0.9
+
+.portf-origin
+  width: 100%
+
+  >img
+    width: 100%
+    display: block
+
+.portf-fg, .portf-exp
+  position: absolute
+  top: 0
+  left: 0
+  width: 100%
+  height: 100%
+  transition: 0.5s
+  opacity: 0
+
+.portf-fg
+  background: linear-gradient(all.$def-pink, all.$def-yellow)
+
+.portf-exp
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-items: center
+
+  &>*
+    margin-bottom: 1rem
+
+  &>*:nth-last-child(1)
+    margin-bottom: 0rem
+
+  .exp-icon
+    width: 10%
+
+  .exp-title
+    font-family: 'Montserrat'
+    font-weight: 500
+    text-transform: uppercase
+    text-align: center
+    color: #fff
+
+    @media screen and ( max-width: 900px )
+      font-size: 0.8rem
+
+  .exp-desc
+    font-family: 'Roboto'
+    font-weight: 300
+    font-style: italic
+    text-align: center
+    color: #fef7ef
+
+    @media screen and ( max-width: 900px )
+      font-size: 0.8rem
