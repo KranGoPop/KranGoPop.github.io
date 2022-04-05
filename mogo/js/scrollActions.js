@@ -7,7 +7,7 @@ function init_scrollActions(data) {
       widthDepends: true,
       initFunc: moveUpInitFunc,
       actionFunc: moveUp,
-      triggerPoint: 0.9,
+      triggerPoint: 0.8,
     },
     {
       item: $('#statistics'),
@@ -57,7 +57,7 @@ function init_scrollActions(data) {
       widthDepends: true,
       initFunc: burgerActionInit,
       actionFunc: burgerAction,
-      triggerPoint: 0.9,
+      triggerPoint: 0.8,
       data: {
         vsh: data.vsliderH,
       },
@@ -75,7 +75,7 @@ function init_scrollActions(data) {
       widthDepends: true,
       initFunc: moveUpInitFunc,
       actionFunc: moveUp,
-      triggerPoint: 0.9,
+      triggerPoint: 0.8,
     },
     {
       item: $('#partners'),
@@ -93,7 +93,7 @@ function init_scrollActions(data) {
       widthDepends: true,
       initFunc: moveUpInitFunc,
       actionFunc: moveUp,
-      triggerPoint: 0.9,
+      triggerPoint: 0.8,
       randomOrder: true,
       minVisiable: 4,
     },
@@ -119,7 +119,7 @@ function init_scrollActions(data) {
       widthDepends: true,
       initFunc: moveUpInitFunc,
       actionFunc: moveUp,
-      triggerPoint: 0.9,
+      triggerPoint: 0.8,
     },
     {
       item: $('#map_block'),
