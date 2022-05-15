@@ -15,7 +15,6 @@
         .main {
             width: 80%;
             margin: 0 auto 0 auto;
-            border: 1px solid black;
         }
 
         .viewer {
@@ -82,6 +81,32 @@
         .magenta {
             color: #ab58e2;
         }
+
+        @media screen and (max-width: 750px) {
+            .main {
+                width: 100%;
+            }
+
+            .button {
+                width: 90%;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .char {
+                width: 8rem;
+                height: 8rem;
+                font-size: 4rem;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+            .char {
+                width: 6rem;
+                height: 6rem;
+                font-size: 3rem;
+            }
+        }
     </style>
 </head>
 <body>
@@ -103,6 +128,7 @@
         let iter = 0
         let c = 0
         let results = []
+        let lock = false
         
         arr = arr.filter(word => word.match(/[А-Я]/g) == null ? false : true)
 
@@ -129,7 +155,7 @@
                     char = $(e.target)
                 }
 
-                if (char) {
+                if (char && !lock) {
                     c+=1
 
                     if (char.text().match(/[А-Я]/g) == null) {
@@ -137,6 +163,7 @@
                         char.parent().css('backgroundColor', '#ed0f47')
                         char.parent().parent().children('.answer').css('backgroundColor', '#54f389')
                         $('.button').css('display', 'flex')
+                        lock = true
                     } else {
                         results.push(true)
                         
@@ -156,6 +183,8 @@
             $('.viewer').text(`${c+1} of ${arr.length}`)
             $('.char').remove()
             $('.button').css('display', 'none')
+
+            lock = false
 
             let chararr = word.split('')
             let counter = 0
