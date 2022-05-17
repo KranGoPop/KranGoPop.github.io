@@ -1,0 +1,248 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PriPre</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans+Condensed:wght@500&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Fira Sans Condensed';
+            font-weight: 500;
+        }
+
+        .title {
+            margin-top: 1rem;
+            font-size: 4rem;
+            color: #ab58e2;
+            text-align: center;
+        }
+
+        .word {
+            margin-top: 6rem;
+            font-size: 6rem;
+            text-align: center;
+        }
+
+        .charcont {
+            margin-top: 3rem;
+            display: flex;
+            justify-content: center;
+        }
+
+        .char {
+            width: 10rem;
+            height: 10rem;
+            margin: 0 2rem 0 2rem;
+            border-radius: 10px;
+            background-color: #54dbf3;
+            color: #ffffff;
+            font-size: 5rem;
+            text-transform: uppercase;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: 0.2s;
+            cursor: pointer;
+        }
+        
+        .button {
+            margin: 4rem auto 0 auto;
+            width: 30%;
+            height: 8rem;
+            text-align: center;
+            color: #ffffff;
+            background-color: #54f389;
+            border-radius: 10px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-size: 5rem;
+            cursor: pointer;
+
+        }
+
+        .green {
+            color: #54f389;
+        }
+
+        .red {
+            color: #ed0f47;
+        }
+
+        .magenta {
+            color: #ab58e2;
+        }
+
+        .blue {
+            color: #54dbf3;
+        }
+
+        .res {
+            font-size: 4rem;
+            color: #000;
+            text-align: center;
+            margin-top: 1rem;
+        }
+
+        @media screen and (max-width: 750px) {
+            .button {
+                width: 90%;
+            }
+
+            .word {
+                font-size: 5rem;
+            }
+
+            .charcont {
+                margin-top: 5rem;
+            }
+        }
+
+        @media screen and (max-width: 550px) {
+            .char {
+                width: 8rem;
+                height: 8rem;
+                font-size: 4rem;
+                margin: 0 0.5rem 1rem 0.5rem;
+            }
+
+            .button {
+                margin-top: 3rem;
+            }
+            
+            .word {
+                font-size: 4rem;
+            }
+
+            .charcont {
+                margin-top: 3rem;
+            }
+        }
+
+        @media screen and (max-width: 450px) {
+
+            .word {
+                font-size: 3rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="main">
+        <div class="title">0 of n</div>
+        <div class="word">камень пр<span class="blue">&</span>ткновения</div>
+        <div class="charcont">
+            <div class="char"><div>е</div></div>
+            <div class="char"><div>и</div></div>
+        </div>
+        <div class="button">ok</div>
+    </div>
+    <script>
+        let str = "прибаутка, привередливый, пригожий"//, прибор, приличия, пристойно, приесться, приказ, приключение, прикорнуть, присяга, притеснять, присяга, притеснять, притон, причина, причуда, притязание, природа, пример, прическа, прискорбно, приволье, прицел, примета, приверженец, прилежный, причиндалы, примак, приятный, приватный, приматы, примитив, примадонна, привилегия, приоритет, препятствия, препоны, прелюдия, премьера, преисподняя, прегрешение, пренебрегать, прекословить, препираться, престол, превратный, пресловутый, прельстить, преклонный, преставиться, преследовать, преподаватель, преподнести, предел, препроводить, преподобный, прелюбодей, камень преткновения, пресмыкаться, преамбула, препарировать, престиж, президент, претензия, презумпция, прерогатива, превентивный, прелат, превалировать, президиум, претендент, прецедент, префект"
+        let arr = str.split(', ')
+        let iter = 0
+        let al = arr.length
+        let current = -1
+        let lock = false
+        let res = []
+
+        arr = arr.sort(function(a, b) {
+            if (al*2 >= iter) {
+                iter += 1
+                return Math.floor(Math.random()*10)%3 - 1
+            } else {
+                return 0
+            }
+        })
+
+        $(document).ready(function() {
+            $('.char').click(function(e) {
+                if (current > al-1) {
+                    showResults()
+                } else if (!lock) {
+                    let char = undefined
+
+                    if ($(e.target).hasClass('char')) {
+                        char = $(e.target).children()
+                    } else if ($(e.target).parent().hasClass('char')) {
+                        char = $(e.target)
+                    }
+
+                    let cchar = char.text()
+                    let pos = arr[current].search(/(пре|при)/)+2
+
+                    if (arr[current][pos] == cchar) {
+                        res.push(true)
+                        emmitNext()
+                    } else {
+                        $('.char').css('backgroundColor', '#54f389')
+                        char.parent().css('backgroundColor', '#ed0f47')
+                        $('.button').css('display', '')
+
+                        let head = arr[current].slice(0, pos)
+                        let tail = arr[current].slice(pos+1)
+
+                        $('.word').html(`${head}<span class="green">${arr[current][pos].toLocaleUpperCase()}</span>${tail}`)
+
+                        lock = true
+
+                        res.push(cchar)
+                    }
+                }
+            })
+
+            $('.button').click(function(e) {
+                if (current > al-1) {
+                    showResults()
+                } else {
+                    lock = false
+                    emmitNext()
+                }
+            })
+
+            emmitNext()
+        })
+
+        function emmitNext() {
+            current += 1
+
+            let word = arr[current]
+            let pos = word.search(/(пре|при)/)+2
+            let head = word.slice(0, pos)
+            let tail = word.slice(pos+1)
+            
+            $('.word').html(`${head}<span class="blue">&</span>${tail}`)
+            $('.button').css('display', 'none')
+            $('.title').text(`${current+1} of ${al}`)
+            $('.char').css('backgroundColor', '')
+        }
+
+        function showResults() {
+            $('.title').remove()
+            $('.charcont').remove()
+            $('.button').remove()
+            $('.word').remove()
+
+            $('.main').append(`<div class="res">Congrats <span class="magenta">${Math.round(res.reduce((a, c) => c === true ? a+1 : a, 0)*1000/al)/10}%</span>`)
+
+            let counter = -1
+            for (let i of res) {
+                counter += 1
+
+                if (i === true) continue
+                else {
+                    let word = arr[counter]
+                    let pos = word.search(/(пре|при)/)+2
+                    let head = word.slice(0, pos)
+                    let tail = word.slice(pos+1)
+
+                    $('.main').append(`<div class="res">${head}<span class="red">${arr[counter][pos].toUpperCase()}</span>${tail}</div>`)
+                }
+            }
+        }
+    </script>
+</body>
+</html>
