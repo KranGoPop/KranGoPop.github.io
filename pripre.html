@@ -143,26 +143,16 @@
     <script>
         let str = "прибаутка, привередливый, пригожий"//, прибор, приличия, пристойно, приесться, приказ, приключение, прикорнуть, присяга, притеснять, присяга, притеснять, притон, причина, причуда, притязание, природа, пример, прическа, прискорбно, приволье, прицел, примета, приверженец, прилежный, причиндалы, примак, приятный, приватный, приматы, примитив, примадонна, привилегия, приоритет, препятствия, препоны, прелюдия, премьера, преисподняя, прегрешение, пренебрегать, прекословить, препираться, престол, превратный, пресловутый, прельстить, преклонный, преставиться, преследовать, преподаватель, преподнести, предел, препроводить, преподобный, прелюбодей, камень преткновения, пресмыкаться, преамбула, препарировать, престиж, президент, претензия, презумпция, прерогатива, превентивный, прелат, превалировать, президиум, претендент, прецедент, префект"
         let arr = str.split(', ')
-        let iter = 0
         let al = arr.length
         let current = -1
         let lock = false
         let res = []
 
-        arr = arr.sort(function(a, b) {
-            if (al*2 >= iter) {
-                iter += 1
-                return Math.floor(Math.random()*10)%3 - 1
-            } else {
-                return 0
-            }
-        })
+        arr = shuffle(arr)
 
         $(document).ready(function() {
             $('.char').click(function(e) {
-                if (current > al-1) {
-                    showResults()
-                } else if (!lock) {
+                if (!lock) {
                     let char = undefined
 
                     if ($(e.target).hasClass('char')) {
@@ -195,29 +185,29 @@
             })
 
             $('.button').click(function(e) {
-                if (current > al-1) {
-                    showResults()
-                } else {
-                    lock = false
-                    emmitNext()
-                }
+                lock = false
+                emmitNext()
             })
 
             emmitNext()
         })
 
         function emmitNext() {
-            current += 1
+            if (current >= al-1) {
+                showResults()
+            } else {
+                current += 1
 
-            let word = arr[current]
-            let pos = word.search(/(пре|при)/)+2
-            let head = word.slice(0, pos)
-            let tail = word.slice(pos+1)
-            
-            $('.word').html(`${head}<span class="blue">&</span>${tail}`)
-            $('.button').css('display', 'none')
-            $('.title').text(`${current+1} of ${al}`)
-            $('.char').css('backgroundColor', '')
+                let word = arr[current]
+                let pos = word.search(/(пре|при)/)+2
+                let head = word.slice(0, pos)
+                let tail = word.slice(pos+1)
+
+                $('.word').html(`${head}<span class="blue">&</span>${tail}`)
+                $('.button').css('display', 'none')
+                $('.title').text(`${current+1} of ${al}`)
+                $('.char').css('backgroundColor', '')
+            }
         }
 
         function showResults() {
@@ -242,6 +232,17 @@
                     $('.main').append(`<div class="res">${head}<span class="red">${arr[counter][pos].toUpperCase()}</span>${tail}</div>`)
                 }
             }
+        }
+
+        function shuffle(array) {
+            let currentIndex = array.length,  randomIndex;
+            while (currentIndex != 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+                [array[currentIndex], array[randomIndex]] = [
+                array[randomIndex], array[currentIndex]];
+            }
+            return array;
         }
     </script>
 </body>
