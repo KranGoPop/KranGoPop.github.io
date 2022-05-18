@@ -82,6 +82,33 @@
             color: #ab58e2;
         }
 
+        .retry {
+            width: 6rem;
+            height: 6rem;
+            position: fixed;
+            right: 7rem;
+            bottom: 7rem;
+            background-color: #54f389;
+            border-radius: 50%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            cursor: pointer;
+        }
+
+        .retry div {
+            width: 5rem;
+            height: 5rem;
+        }
+
+        .retry div img {
+            width: 100%;
+        }
+
+        .invisiable {
+            display: none;
+        }
+
         @media screen and (max-width: 750px) {
             .main {
                 width: 100%;
@@ -89,6 +116,11 @@
 
             .button {
                 width: 90%;
+            }
+
+            .retry {
+                right: 3rem;
+                bottom: 3rem;
             }
         }
 
@@ -102,6 +134,10 @@
 
             .button {
                 margin-top: 3rem;
+            }
+
+            .res {
+                font-size: 3rem;
             }
         }
 
@@ -122,7 +158,9 @@
             <div class="char"><div>c</div></div>
             <div class="char"><div>b</div></div>
         </div>
-        <div class="button"><div>OK</div></div>
+        <div class="button invisiable"><div>OK</div></div>
+        <div class="retry invisiable"><div><img src="./resources/arrow.svg" alt="retry"></div></div>
+        <div class="rescont"></div>
     </div>
     <script>
         let s = "аэропОрты, неподвижн. ударение на 4-ом слоге бАнты, неподвижн. ударение на 1-ом слоге бОроду, вин.п.,только в этой форме ед.ч., ударение на 1-ом слоге бухгАлтеров, род.п.мн.ч., неподвижное, ударение на 2-ом слоге вероисповЕдание, от веру исповЕдать граждАнство дефИс, из нем.яз., где ударение на 2-ом слоге диспансЕр, слово пришло из англ. яз. Через посредство франц.яз., где удар. всегда на последнем слоге договорЁнность докумЕнт досУг еретИк жалюзИ, из франц. яз., где удар. всегда на последнем слоге знАчимость, от прил. знАчимый Иксы, им.п. мн.ч., неподвижн. ударение каталОг, в одном ряду со словами диалОг, монолОг, некролОг т.п. квартАл, из нем. яз., где ударение на 2-ом слоге киломЕтр, в одном ряду со словами: сантимЕтр, децимЕтр, миллимЕтр… кОнусы, кОнусов, неподвиж. Ударение на 1-м слоге во всех падежах в ед. и мн. ч. корЫсть крАны, неподвижн. ударение на 1-ом слоге кремЕнь, кремнЯ, удар. во всех формах на последнем слоге, как и в слове огОнь лЕкторы, лЕкторов, см. слово бант(ы) лыжнЯ мЕстностей, род.п. мн.ч., в одном ряду со словоформой пОчестей, чЕлюстей…, но новостЕй мусоропровОд, в одном ряду со словами газопровОд, нефтепровОд, водопровОд намЕрение нарОст нЕдруг недУг некролОг, см. каталОг нЕнависть нОвости, новостЕй, но: см. мЕстностей нОготь, нОгтя, неподвижн. ударение во всех формах ед.ч. Отрочество, от Отрок- подросток партЕр, из франц. яз., где удар. всегда на последнем слоге портфЕль пОручни придАное призЫв, в одном ряду со словами позЫв, отзЫв (посла), созЫв, но: Отзыв (на публикацию) свЁкла сирОты, им.п.мн.ч., ударение во всех формах мн.ч. только на 2-ом слоге срЕдства, им.п.мн.ч. созЫв, см. призЫв стАтуя столЯр, в одном ряду со словами малЯр, доЯр, школЯр… тамОжня тОрты, тОртов цемЕнт цЕнтнер цепОчка шАрфы, см. бАнты шофЁр, в одном ряду со словами: киоскЁр, контролЁр… экспЕрт, из франц. яз., где ударение всегда на последнем слоге вернА, краткое прилаг. ж.р. знАчимый красИвее, прил.и нареч. в сравн.ст. красИвейший, превосх.ст. кУхонный ловкА, краткое прилаг. ж.р. баловАть, в одном ряду со словами баловАться, избаловАть, разбаловАть…, но: бАловень судьбы брать-бралА брАться-бралАсь взять-взялА взЯться-взялАсь включИть-включИшь, включИт, включИм влИться-влилАсь ворвАться-ворвалАсь воспринЯть-воспринялА воссоздАть-воссоздалА вручИть-вручИт гнАть-гналА гнАться-гналАсь добрАть-добралА добрАться-добралАсь дождАться-дождалАсь дозвонИться-дозвонИтся, дозвонЯтся дозИровать ждать-ждалА жИться-жилОсь закУпорить занЯть-зАнял, занялА, зАняло, зАняли заперЕть-заперлА заперЕться-заперлАсь (на ключ, на замок и т.п.) звать-звалА, звонИть, звонИшь, звонИт, звонИм исчЕрпать клАсть-клАла клЕить крАсться — крАлась лгать-лгалА лить-лилА лИться-лилАсь наврАть-навралА наделИть-наделИт надорвАться-надорвалАсь назвАться-назвалАсь накренИться-накренИтся налИть-налилА нарвАть-нарвалА насорИть-насорИт начАть-нАчал, началА, нАчали обзвонИть-обзвонИт мозаИчный оптОвый прозорлИва, краткое прилаг. ж.р., в одном ряду со словами смазлИва, суетлИва, болтлИва..., но: прожОрлива слИвовый, образовано от слИва облегчИть-облегчИт облИться-облилАсь обнЯться-обнялАсь обогнАть-обогналА ободрАть-ободралА ободрИть ободрИться-ободрИшься обострИть одолжИть-одолжИт озлОбить оклЕить окружИть-окружИт опломбировАть, в одном ряду со словами формировАть, нормировАть, сортировАть, премировАть… опОшлить освЕдомиться-освЕдомишься отбЫть-отбылА отдАть-отдалА откУпорить-откУпорил отозвАть-отозвалА отозвАться-отозвалАсь перезвонИть — перезвонИт перелИть-перелилА плодоносИть повторИть-повторИт позвАть-позвалА позвонИть-позвонИшь-позвонИт полИть-полилА положИть-положИл понЯть-понялА послАть-послАла прибЫть-прИбыл-прибылА-прИбыло принЯть-прИнял-прИняли-принялА принУдить рвАть-рвалА сверлИть-сверлИшь-сверлИт снЯть-снялА создАть-создалА сорвАть-сорвалА сорИть-сорИт убрАть-убралА убыстрИть углубИть укрепИть-укрепИт чЕрпать щемИть-щемИт щЁлкать балОванный включЁнный-включЁн, см. низведЁнный довезЁнный зАгнутый зАнятый-занятА зАпертый-запертА заселЁнный-заселенА избалОванный, см. балОванный кормЯщий кровоточАщий молЯщий нажИвший нАжитый-нажитА налИвший-налитА нанЯвшийся начАвший нАчатый низведЁнный-низведЁн, см. включЁнный… ободрЁнный-ободрЁн-ободренА обострЁнный отключЁнный определЁнный-определЁн отключЁнный повторЁнный поделЁнный понЯвший прИнятый приручЁнный прожИвший снЯтый-снятА сОгнутый балУясь закУпорив начАв начАвшись отдАв поднЯв понЯв прибЫв вОвремя добелА дОверху донЕльзя дОнизу дОсуха завИдно, в значении сказуемого зАгодя, разговорное зАсветло зАтемно красИвее, прил.и нареч. в сравн.ст. навЕрх надОлго ненадОлго"
@@ -134,25 +172,29 @@
         let c = 0
         let results = []
         let lock = false
+        let allright = true
+        let retry = false
+        let retryList = []
+        let retryIndex = -1
         
         arr = arr.filter(word => word.match(/[А-Я]/g) == null ? false : true)
 
         let al = arr.length
 
-        arr = arr.sort(function(a, b) {
-            if (al*2 >= iter) {
-                iter += 1
-                return Math.floor(Math.random()*10)%3 - 1
-            } else {
-                return 0
-            }
-        })
+        arr = shuffle(arr)
 
         $(document).ready(function() {
             putNewWordIntoHtml(arr[c])
 
             $('.charcont').click(function(e) {
                 let char = null
+                let currentArr = undefined
+
+                if (retry) {
+                    currentArr = retryList[retryIndex]
+                } else {
+                    currentArr = arr
+                }
 
                 if ($(e.target).hasClass('char')) {
                     char = $(e.target).children()
@@ -167,7 +209,7 @@
                         results.push(char.parent()[0].dataset.num)
                         char.parent().css('backgroundColor', '#ed0f47')
                         char.parent().parent().children('.answer').css('backgroundColor', '#54f389')
-                        $('.button').css('display', 'flex')
+                        $('.button').removeClass('invisiable')
                         lock = true
                     } else {
                         results.push(true)
@@ -175,19 +217,50 @@
                         if (c >= al) {
                             pushResults()
                         } else {
-                            putNewWordIntoHtml(arr[c])
+                            putNewWordIntoHtml(currentArr[c])
                         }
                     }
                 }
             })
 
-            $('.button').click((e)=>{if (c >= al) {pushResults();} else {putNewWordIntoHtml(arr[c]);}})
+            $('.button').click(function (e) {
+                let currentArr = undefined
+
+                if (retry) currentArr = retryList[retryIndex];
+                else currentArr = arr;
+                
+                if (c >= al) pushResults();
+                else putNewWordIntoHtml(currentArr[c]);
+            })
+
+            $('.retry').click(function(e) {
+                retryIndex += 1
+                retryList[retryIndex] = shuffle(retryList[retryIndex])
+                results = []
+                c = 0
+                al = retryList[retryIndex].length
+                allright = true
+
+                $('.charcont, .viewer').removeClass('invisiable')
+                $('.rescont, .retry').addClass('invisiable')
+                $('.res').remove()
+
+                putNewWordIntoHtml(retryList[retryIndex][c])
+            })
         })
 
         function putNewWordIntoHtml(word) {
-            $('.viewer').text(`${c+1} of ${arr.length}`)
+            let currentArr = undefined
+
+            if (retry) {
+                currentArr = retryList[retryIndex]
+            } else {
+                currentArr = arr
+            }
+
+            $('.viewer').text(`${c+1} of ${currentArr.length}`)
             $('.char').remove()
-            $('.button').css('display', 'none')
+            $('.button').addClass('invisiable')
 
             lock = false
 
@@ -205,13 +278,26 @@
         }
 
         function pushResults() {
-            $('.charcont').remove()
-            $('.viewer').remove()
-            $('.button').remove()
-            $('.main').append(`<div class="res">Congrats you have <span class="magenta">${Math.round(results.reduce((a, c) => c === true ? a+1 : a, 0)*100/al)}%</span></div>`)
+            $('.charcont, .viewer, .button').addClass('invisiable')
+            $('.rescont').removeClass('invisiable')
+            $('.main>.rescont').append(`<div class="res">Congrats you have <span class="magenta">${Math.round(results.reduce((a, c) => c === true ? a+1 : a, 0)*100/al)}%</span></div>`)
+
+            if (retry) {
+                $('.rescont').append(`<div class="res">Try number <span class="red">${retryList.length}</span></div>`)
+            }
 
             let counter = -1
             let subject = ''
+            let currentArr = undefined
+
+            if (retry) {
+                currentArr = retryList[retryIndex]
+            } else {
+                currentArr = arr
+            }
+
+            retryList[retryIndex+1] = []
+            retry = false
 
             for (let i of results) {
                 counter += 1
@@ -219,22 +305,41 @@
 
                 if (i !== true) {
                     let subcounter = -1
-                    let apos = arr[counter].search(/[А-Я]/g)
+                    let apos = currentArr[counter].search(/[А-Я]/g)
+                    allright = false
 
-                    for (let a in arr[counter]) {
+                    retryList[retryIndex+1].push(currentArr[counter])
+
+                    for (let a in currentArr[counter]) {
                         subcounter += 1
                         if (subcounter == i) {
-                            subject += '<span class="red">' + arr[counter][i] + '</span>'
+                            subject += '<span class="red">' + currentArr[counter][i] + '</span>'
                         } else if (subcounter == apos) {
-                            subject += `<span class='green'>${arr[counter][apos].toLocaleLowerCase()}</span>`
+                            subject += `<span class='green'>${currentArr[counter][apos].toLocaleLowerCase()}</span>`
                         } else {
-                            subject += arr[counter][subcounter]
+                            subject += currentArr[counter][subcounter]
                         }
                     }
 
-                    $('.main').append(`<div class="res">${subject}</div>`)
+                    $('.main>.rescont').append(`<div class="res">${subject}</div>`)
                 }
             }
+
+            if (!allright) {
+                retry = true
+                $('.retry').removeClass('invisiable')
+            }
+        }
+
+        function shuffle(array) {
+            let currentIndex = array.length,  randomIndex;
+            while (currentIndex != 0) {
+                randomIndex = Math.floor(Math.random() * currentIndex);
+                currentIndex--;
+                [array[currentIndex], array[randomIndex]] = [
+                array[randomIndex], array[currentIndex]];
+            }
+            return array;
         }
 
     </script>
