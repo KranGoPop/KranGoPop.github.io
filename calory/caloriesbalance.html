@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Balance of Calories</title>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;700&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <div class="main">
+        <div class="cont" id="scrollers">
+            <div class="area" data-type="chicken">
+                <div class="pipe"></div>
+                <div class="pic"><img src="./img/chicken.svg" alt="chicken"></div>
+                <div class="pipe"></div>
+                <div class="scrollbar">
+                    <div class="leftBar" style="background-color: #ff8507;"></div>
+                    <div class="center"></div>
+                    <div class="rightBar"></div>
+                </div>
+                <div class="pipe"></div>
+                <div class="val" style="color: #ff8507;">0g</div>
+                <div class="pipe"></div>
+            </div>
+            <div class="area" data-type="buckwheet">
+                <div class="pipe"></div>
+                <div class="pic"><img src="./img/buckwheet.svg" alt="chicken"></div>
+                <div class="pipe"></div>
+                <div class="scrollbar">
+                    <div class="leftBar" style="background-color: #ffc84c;"></div>
+                    <div class="center"></div>
+                    <div class="rightBar"></div>
+                </div>
+                <div class="pipe"></div>
+                <div class="val" style="color: #ffc84c;">0g</div>
+                <div class="pipe"></div>
+            </div>
+            <div class="area" data-type="eggs">
+                <div class="pipe"></div>
+                <div class="pic"><img src="./img/eggs.svg" alt="chicken"></div>
+                <div class="pipe"></div>
+                <div class="scrollbar">
+                    <div class="leftBar" style="background-color: #ffd464;"></div>
+                    <div class="center"></div>
+                    <div class="rightBar"></div>
+                </div>
+                <div class="pipe"></div>
+                <div class="val" style="color: #ffd464;">0g</div>
+                <div class="pipe"></div>
+            </div>
+            <div class="area" data-type="tomatoes">
+                <div class="pipe"></div>
+                <div class="pic"><img src="./img/tomatoes.svg" alt="chicken"></div>
+                <div class="pipe"></div>
+                <div class="scrollbar">
+                    <div class="leftBar" style="background-color: #ff565b;"></div>
+                    <div class="center"></div>
+                    <div class="rightBar"></div>
+                </div>
+                <div class="pipe"></div>
+                <div class="val" style="color: #ff565b;">0g</div>
+                <div class="pipe"></div>
+            </div>
+            <div class="area" data-type="cucumbers">
+                <div class="pipe"></div>
+                <div class="pic"><img src="./img/cucumber.svg" alt="chicken"></div>
+                <div class="pipe"></div>
+                <div class="scrollbar">
+                    <div class="leftBar" style="background-color: #8bdd4d;"></div>
+                    <div class="center"></div>
+                    <div class="rightBar"></div>
+                </div>
+                <div class="pipe"></div>
+                <div class="val" style="color: #8bdd4d;">0g</div>
+                <div class="pipe"></div>
+            </div>
+            <div class="area" data-type="nuts">
+                <div class="pipe"></div>
+                <div class="pic"><img src="./img/nut.svg" alt="chicken"></div>
+                <div class="pipe"></div>
+                <div class="scrollbar">
+                    <div class="leftBar" style="background-color: #ddb577;"></div>
+                    <div class="center"></div>
+                    <div class="rightBar"></div>
+                </div>
+                <div class="pipe"></div>
+                <div class="val" style="color: #ddb577;">0g</div>
+                <div class="pipe"></div>
+            </div>
+            <div class="area" data-type="rice">
+                <div class="pipe"></div>
+                <div class="pic"><img src="./img/rice.svg" alt="chicken"></div>
+                <div class="pipe"></div>
+                <div class="scrollbar">
+                    <div class="leftBar" style="background-color: #fdd44b;"></div>
+                    <div class="center"></div>
+                    <div class="rightBar"></div>
+                </div>
+                <div class="pipe"></div>
+                <div class="val" style="color: #fdd44b;">0g</div>
+                <div class="pipe"></div>
+            </div>
+            <div class="area" data-type="fish">
+                <div class="pipe"></div>
+                <div class="pic"><img src="./img/fish.svg" alt="chicken"></div>
+                <div class="pipe"></div>
+                <div class="scrollbar">
+                    <div class="leftBar" style="background-color: #3380dd;"></div>
+                    <div class="center"></div>
+                    <div class="rightBar"></div>
+                </div>
+                <div class="pipe"></div>
+                <div class="val" style="color: #3380dd;">0g</div>
+                <div class="pipe"></div>
+            </div>
+        </div>
+        <div class="cont" id="recipe">
+            <div class="pillars">
+                <div class="pillar" data-type="proteins">
+                    <div class="blank"></div>
+                    <div class="num">0</div>
+                    <div class="block" style="background-color: #68dfff;"></div>
+                    <div class="title">proteins</div>
+                </div>
+                <div class="pillar" data-type="fats">
+                    <div class="blank"></div>
+                    <div class="num">0</div>
+                    <div class="block" style="background-color: #ff8652;"></div>
+                    <div class="title">fats</div>
+                </div>
+                <div class="pillar" data-type="carbohydrates">
+                    <div class="blank"></div>
+                    <div class="num">0</div>
+                    <div class="block" style="background-color: #5affa0;"></div>
+                    <div class="title">carbohydrates</div>
+                </div>
+            </div>
+            <div class="sum">0</div>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
